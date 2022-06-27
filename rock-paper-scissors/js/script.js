@@ -22,7 +22,7 @@ function playerSelection() {
     } else if (player == 'paper' && result1 == 'rock') {
         console.log('You win');
     } else if (player == 'paper' && result1 == 'paper') {
-        console.log('Tie');
+        console.log('Tie'); 
     } else if (player == 'paper' && result1 == 'scissors') {
         console.log('You lose');
     } else if (player == 'scissors' && result1 == 'rock') {
