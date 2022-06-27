@@ -1,0 +1,88 @@
+:root {
+    --dark: #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --light: #EEE;
+    --pink: #EC4899;
+    --purple: #8B5CF6;
+    --gray: #6B7280;
+    --f-family: 'fira sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: var(--f-family)
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark);
+    color: #fff;;
+}
+
+header {
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: var(--gray);
+}
+
+#new_task_form {
+    display: flex;
+}
+
+input, button {
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+#new_task_input {
+    flex: 1 1 0;
+    background-color: var(--darker);
+    border-radius: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    color: var(--light);
+    font-size: 1.25rem;
+}
+
+#new_task_input::placeholder{
+    color: var(--gray);
+}
+
+#new_task_submit {
+    color: var(--pink);
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#new_task_submit:hover {
+    opacity: 0.8;
+}
+
+#new_task_submit:active {
+    opacity: 0.6;
+}
+
+main {
+    display: 1 1 0;
+    max-width: 800px;
+    width: 100%;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
